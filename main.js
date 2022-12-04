@@ -15,7 +15,7 @@ function repositories() {
 function mostrarTela(dados) {
   for (let i = 0; i <= 5; i++) {
     var elemento = ""
-    elemento += `<li><img src="assets/assets/folder.svg">
+    elemento += `<li><img src="assets/folder.svg">
        <span>${dados[i].name}</span>
        <a href="${dados[i].html_url}">${dados[i].html_url}</a>
        <li>`
@@ -74,7 +74,7 @@ function mostrarRamdom(dados) {
 
   if (dados[i].description == null) {
     elemento01.innerHTML = `
- <p> <img src="/assets/assets/folder.svg">${dados[i].name}</p>
+ <p> <img src="assets/folder.svg">${dados[i].name}</p>
   </br>
   <a href="${dados[i].html_url}">${dados[i].html_url}</a>
    <p>No Description</p>
@@ -85,7 +85,7 @@ function mostrarRamdom(dados) {
   `
   } else {
     elemento01.innerHTML = `
- <p> <img src="/assets/assets/folder.svg">${dados[i].name}</p>
+ <p> <img src="assets/folder.svg">${dados[i].name}</p>
   </br>
   <a href="${dados[i].html_url}">${dados[i].html_url}</a>
    <p>${dados[i].description}</p>
@@ -98,7 +98,7 @@ function mostrarRamdom(dados) {
 
   if (dados[j].description == null) {
     elemento02.innerHTML = `
-  <p> <img src="/assets/assets/folder.svg">${dados[j].name}</p>
+  <p> <img src="assets/folder.svg">${dados[j].name}</p>
   </br>
   <a href="${dados[j].html_url}">${dados[j].html_url}</a>
   <p>No description</p>
@@ -109,7 +109,7 @@ function mostrarRamdom(dados) {
   `
   } else {
     elemento02.innerHTML = `
-  <p> <img src="/assets/assets/folder.svg">${dados[j].name}</p>
+  <p> <img src="assets/folder.svg">${dados[j].name}</p>
   </br>
   <a href="${dados[j].html_url}">${dados[j].html_url}</a>
   <p>${dados[j].description}</p>
