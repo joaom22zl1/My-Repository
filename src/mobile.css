@@ -274,7 +274,8 @@ body {
 }
 
 .container #random-projects div img {
-  margin-right: 2rem;
+  width: 20px;
+  margin-left: 2rem;
 }
 
 .container #random-projects div a {

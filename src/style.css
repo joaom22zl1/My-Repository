@@ -263,6 +263,10 @@ body {
   font-size: 0.8em;
 }
 
+#project-tittle {
+  font-size: 1.2em;
+}
+
 .container #random-projects div p {
   display: flex;
   align-items: center;
@@ -271,7 +275,8 @@ body {
 }
 
 .container #random-projects div img {
-  margin-right: 2rem;
+  width: 25px;
+  margin-left: 2rem;
 }
 
 .container #random-projects div a {
