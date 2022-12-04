@@ -1,0 +1,363 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;500;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-color: #22212c;
+  --cards-Color: #302f3d;
+  --pfp-border: #38e54d;
+  --letter-color: #837e9f;
+  --link-color: #009eff;
+}
+
+body {
+  background-color: var(--bg-color);
+  font-family: "Merriweather Sans", sans-serif;
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#content .container {
+  margin: 1rem;
+}
+
+.container #profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20rem;
+  height: 15rem;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 5px 6px 10px -4px rgba(0, 0, 0, 1);
+  background-color: var(--cards-Color);
+}
+
+.container #profile #profile-pic {
+  width: 128px;
+  height: 128px;
+  border: 2px solid var(--pfp-border);
+  border-radius: 100%;
+}
+
+.container #profile #profile-pic:hover {
+  transform: scale(1.2);
+  transition: 0.5s all linear;
+}
+
+.container #profile #profile-name {
+  font-size: 1.3em;
+  font-family: "Merriweather Sans", sans-serif;
+  color: var(--letter-color);
+  font-weight: 700;
+  margin-top: 1rem;
+}
+
+.container #profile #function {
+  font-size: 0.8em;
+  color: var(--letter-color);
+  margin-top: 0.2rem;
+}
+
+.container #medias {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  padding: 1rem 0rem 1rem 2.5rem;
+  margin-top: 0.5rem;
+  width: 20rem;
+  box-shadow: 5px 6px 10px -4px rgba(0, 0, 0, 1);
+  background-color: var(--cards-Color);
+}
+
+.container #medias ul {
+  list-style: none;
+}
+
+.container #medias ul li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 1rem;
+  font-size: 0.8em;
+  color: var(--letter-color);
+}
+
+.container #medias ul li:nth-of-type(5) {
+  margin-bottom: 1rem;
+}
+
+.container #medias ul li a {
+  text-decoration: none;
+  color: var(--letter-color);
+}
+
+.container #medias ul li a::after {
+  content: " \276f";
+}
+
+.container #medias ul li a:hover {
+  text-decoration: underline;
+  color: var(--link-color);
+}
+
+.container #medias ul li img {
+  margin-right: 0.5rem;
+}
+
+.container #medias ul li img:hover {
+  transform: scale(1.2);
+  transition: 0.3s;
+}
+
+.container #technologies {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  padding: 1rem 1rem 1rem;
+  margin-top: 0.5rem;
+  width: 20rem;
+  background-color: var(--cards-Color);
+  box-shadow: 5px 6px 10px -4px rgba(0, 0, 0, 1);
+}
+
+.container #technologies span {
+  font-size: 1em;
+  margin-left: 1rem;
+  color: var(--letter-color);
+}
+
+.container #technologies ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.container #technologies ul li {
+  background-color: #cb92b1;
+  color: rgb(0, 0, 0);
+  font-size: 0.8em;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+.container #education {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-top: 0.5rem;
+  width: 20rem;
+  background-color: var(--cards-Color);
+  box-shadow: 5px 6px 10px -4px rgba(0, 0, 0, 1);
+}
+
+.container #education ul {
+  list-style: none;
+}
+
+.container #education ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--letter-color);
+}
+
+.container #education ul li span {
+  font-size: 0.8em;
+}
+
+.container #education #education-title {
+  font-family: "Merriweather Sans", sans-serif;
+  font-weight: 700;
+  font-size: 1em;
+}
+
+.container #projects {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 20rem;
+  padding: 5% 1%;
+  height: fit-content;
+  border-radius: 20px;
+  font-size: 0.7em;
+  background-color: var(--cards-Color);
+  box-shadow: 5px 6px 10px -4px rgba(0, 0, 0, 1);
+}
+
+.container #projects h1 {
+  color: var(--letter-color);
+  font-size: 1.3em;
+  margin-left: 1rem;
+}
+
+.container #projects ul {
+  list-style: none;
+}
+
+.container #projects ul li {
+  font-size: 0.8em;
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  color: var(--letter-color);
+}
+
+.container #projects ul li a {
+  text-decoration: none;
+  color: var(--letter-color);
+}
+
+.container #projects ul li img {
+  margin-right: 0.3rem;
+}
+
+.container #projects ul li img:hover {
+  transform: scale(1.2);
+  transition: 0.3s;
+}
+
+.container #projects ul li a:hover {
+  color: var(--link-color);
+  text-decoration: underline;
+}
+
+.container #projects #projects-link {
+  position: absolute;
+  right: 1rem;
+  bottom: 0.5rem;
+  text-decoration: none;
+  color: var(--letter-color);
+}
+
+.container #projects #projects-link:hover {
+  color: var(--link-color);
+}
+
+.container #random-projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.container #random-projects div {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: var(--cards-Color);
+  padding: 2%;
+  width: 20rem;
+  height: 12rem;
+  margin-top: 1.5rem;
+  font-size: 0.9em;
+  border-radius: 20px;
+  box-shadow: 5px 6px 10px -4px rgba(0, 0, 0, 1);
+  font-size: 0.8em;
+}
+
+.container #random-projects div p {
+  display: flex;
+  align-items: center;
+  color: var(--letter-color);
+  margin: 5px;
+}
+
+.container #random-projects div img {
+  margin-right: 2rem;
+}
+
+.container #random-projects div a {
+  text-decoration: none;
+  color: #009eff;
+}
+.container #random-projects div a:hover {
+  text-decoration: underline;
+}
+
+.container #random-projects div span {
+  position: absolute;
+  right: 2rem;
+  bottom: 1rem;
+}
+
+h2 {
+  width: 20rem;
+  height: 3.5rem;
+  margin: 1.5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  background-color: var(--cards-Color);
+  font-size: 1.3em;
+  color: var(--letter-color);
+  box-shadow: 5px 6px 10px -4px rgba(0, 0, 0, 1);
+}
+
+.container #recents {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  width: 20rem;
+  height: 10rem;
+  padding: 2%;
+  border-radius: 20px;
+  background-color: var(--cards-Color);
+  box-shadow: 5px 6px 10px -4px rgba(0, 0, 0, 1);
+}
+
+.container #recents img {
+  width: 58px;
+  height: 58px;
+  margin: auto 0;
+  border: 2px solid #3f0071;
+  border-radius: 100%;
+}
+
+.container #recents #recents-projects {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.8em;
+  padding-top: 0.5rem;
+}
+
+.container #recents #recents-projects p {
+  color: var(--letter-color);
+  margin: 2px;
+}
+
+.container #recents #recents-projects a {
+  text-decoration: none;
+  color: var(--link-color);
+}
+
+.container #recents #recents-projects a:hover {
+  text-decoration: underline;
+}
+
+.container #recents #recents-projects span {
+  position: absolute;
+  right: 2rem;
+  bottom: 1rem;
+}
+
+/* 
+position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+  height: fit-content;
+  border-radius: 20px;
+  background-color: var(--cards-Color);
+  box-shadow: 5px 6px 10px -4px rgba(0, 0, 0, 1); */
